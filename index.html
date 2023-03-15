@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/bootstrap.css">
+</head>
+<body>
+    <div class="text-center text-light">
+        <div class="parent m-auto p-2 bg-dark my-4 rounded" style="width: 20vw;">
+           <h1>CASIO</h1>
+
+            <div class="clc">
+                <input type="text" class="input2" id="input" name="disp" style="width: 80%; height: 8vh;">
+                <input type="text" class=" inp1 my-2" id="inp" name="disp">
+
+                <div>
+                   <div class="divs ">
+                    <button id="" class="button" onclick="show('9')"><b>9</b></button>
+                    <button id=""  class="button" onclick="show('8')"><b>8</b></button>
+                    <button id=""  class="button" onclick="show('7')"><b>7</b></button>
+                   </div><br>
+
+                   <div class="divs ">
+                    <button id=""  class="button" onclick="show('6')"><b>6</b></button>
+                    <button id=""  class="button" onclick="show('5')"><b>5</b></button>
+                    <button id=""  class="button" onclick="show('4')"><b>4</b></button>
+                   </div><br>
+
+                   <div class="divs ">
+                    <button id=""  class="button" onclick="show('3')"><b>3</b></button>
+                    <button id=""  class="button" onclick="show('2')"><b>2</b></button>
+                    <button id=""  class="button" onclick="show('1')"><b>1</b></button>
+                   </div><br> 
+
+                   <div class="divs">
+                    <button id=""  class="button" onclick="show('00')"><b>00</b></button>
+                    <button id=""  class="button" onclick="show('0')"><b>0</b></button>
+                    <button id=""  class="button" onclick="show('*')"><b>*</b></button>
+                </div>
+                
+                <div class="divs my-3">
+                    <button id=""  class="button" onclick="show('/')"><b>&#247</b></button>
+                    <button id="equal"  class="button" onclick="show('+'), add()"><b>+</b></button>
+                    <button id=""  class="button" onclick="show('-'), sub()" ><b>-</b></button>
+                </div>
+                
+                <div>
+                    <button id=""  class="button bg-warning" onclick="del()" ><b>DEL</b></button>
+                    <button id=""  class="button  bg-danger" onclick="clean()" ><b>C</b></button>
+                    <button id=""  class="button" onclick="equalTo()" ><b>=</b></button>
+
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/index.js"></script>
+</body>
+</html>
